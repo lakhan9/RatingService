@@ -4,6 +4,7 @@ public class Rating {
 	
 	private String movieId;
 	private String rating;
+	private String cast;
 	public Rating() {};
 	public Rating(String movieId, String rating) {
 		super();
@@ -23,6 +24,15 @@ public class Rating {
 	public void setRating(String rating) {
 		this.rating = rating;
 	}
+
+
+	public String getCast() {
+		return cast;
+	}
+	public void setCast(String cast) {
+		this.cast = cast;
+	}
+
 	
 	
 
