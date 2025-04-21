@@ -24,6 +24,19 @@ public class MovieRatingController {
 		
 	}	
 	
+	@GetMapping(path="/movie/starCast/{name}")
+	public UserRating getUser(@PathVariable String name){
+		
+		List<Rating> ratingList = Arrays.asList(
+				new Rating("1234","5"),
+				new Rating("5678","6")
+			);
+		
+		return new UserRating(ratingList);
+
+	}	
+
+
 	@GetMapping(path="/user/{userId}")
 	public UserRating getUser(@PathVariable String userId){
 		
