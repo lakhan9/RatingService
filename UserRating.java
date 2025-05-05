@@ -6,6 +6,7 @@ public class UserRating {
 
 	
 	private List<Rating> userRatings;
+	private String rate;
 
 	public List<Rating> getRatings() {
 		return userRatings;
